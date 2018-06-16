@@ -1,0 +1,31 @@
+nav {
+  background-color: #030b33;
+
+  .title {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .input-field {
+    label {
+      color: black;
+      top: -10px;
+    }
+
+    i.material-icons {
+      color: #acacac;
+    }
+
+    input[type="search"]{
+      color: black;
+
+      &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &.search-bar {
+    background-color: #f4f4f4;
+  }
+}

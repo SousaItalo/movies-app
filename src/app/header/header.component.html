@@ -1,0 +1,33 @@
+<nav class="hide-on-large-only">
+  <div class="nav-wrapper">
+    <a materialize="sideNav" [materializeParams]="[sideNavParams]" data-activates="slide-out" class="button-collapse">
+      <i class="material-icons">menu</i>
+    </a>
+    <span class="title">AwesomeMovies</span>
+  </div>
+</nav>
+<ul id="slide-out" class="side-nav">
+  <li *ngFor="let routeName of routeNames"><a [routerLink]="[routeName]">{{routeName}}</a></li>
+</ul>
+
+<nav class="hide-on-med-and-down">
+  <div class="container nav-wrapper">
+    <a href="#" class="brand-logo">AwesomeMovies</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li *ngFor="let routeName of routeNames"><a [routerLink]="[routeName]">{{routeName}}</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="search-bar">
+  <div class="container nav-wrapper">
+    <form>
+      <div class="input-field">
+        <!--<input [(ngModel)]="searchQuery" name="searchQuery" (keyup)="myMethod(searchQuery)" id="search" type="search" placeholder="Pesquisar..." required>-->
+        <input id="search" type="search" placeholder="Pesquisar..." required>
+        <label id="search-bar-label" class="label-icon" for="search"><i class="material-icons">search</i></label>
+        <i class="material-icons">close</i>
+      </div>
+    </form>
+  </div>
+</nav>
