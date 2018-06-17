@@ -1,3 +1,18 @@
-<p>
-  movies works!
-</p>
+<div class="container">
+  <section class="content-header">
+    <span>Most Popular Movies</span>
+  </section>
+  <section class="content">
+    <div class="row">
+      <div class="col s12 m4 l3" *ngFor="let movie of movies">
+        <app-movie [movie]="movie"></app-movie>
+      </div>
+    </div>
+  </section>
+  <div class="search-results"
+        infiniteScroll
+        [infiniteScrollDistance]="1"
+        [infiniteScrollThrottle]="2000"
+       (scrolled)="appendNextPage()">
+    </div>
+ </div>

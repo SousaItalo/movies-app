@@ -1,0 +1,43 @@
+.movie-card {
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 1px rgba(51, 51, 51, 0.2);
+}
+
+.card-header {
+  img {
+    width: 100%;
+  }
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  padding: 10px;
+
+  .rating {
+    margin-left:  10px;
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #000219;
+  }
+
+  .release-date {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  span {
+    width: 100%;
+    display: block;
+  }
+}

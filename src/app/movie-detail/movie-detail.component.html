@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="wrapper">
+    <div class="content-header">
+      <div class="title">{{movie.title}}</div>
+      <img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="">
+    </div>
+    <div class="content-body">
+      <div class="duration-rating">
+        <span>Duration: {{movie.runtime}}min</span>
+        <span>Rating: {{movie.vote_average}}</span>
+      </div>
+      <div class="details">
+        <div class="genres">
+          Genre:
+          <span *ngFor="let genre of movie.genres">
+            {{genre.name}}/
+          </span>
+        </div>
+        <div class="overview">
+          {{movie.overview}}
+        </div>
+      </div>
+      <div class="btn-container">
+        <a class="waves-effect waves-light btn">
+          Add to Favorites
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

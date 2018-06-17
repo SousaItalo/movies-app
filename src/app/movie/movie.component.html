@@ -1,3 +1,21 @@
-<p>
-  movie works!
-</p>
+<div class="movie-card">
+  <div class="card-header">
+    <img src="https://image.tmdb.org/t/p/w300/{{movie.backdrop_path}}" alt="assets/img/image-not-found.png">
+  </div>
+  <div class="card-content">
+    <div class="rating">
+      {{movie.vote_average}}
+    </div>
+    <div class="description">
+      <a [routerLink]="['/movies', movie.id]">
+        <span class="title">
+          <!--{{movie.title | slice:0:16}}-->
+          {{movie.title}}
+        </span>
+      </a>
+      <span class="release-date">
+        {{movie.release_date }}
+      </span>
+    </div>
+  </div>
+</div>
