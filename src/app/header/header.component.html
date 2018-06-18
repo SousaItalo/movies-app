@@ -7,14 +7,14 @@
   </div>
 </nav>
 <ul id="slide-out" class="side-nav">
-  <li *ngFor="let routeName of routeNames"><a [routerLink]="[routeName]">{{routeName}}</a></li>
+  <li *ngFor="let routeName of routeNames"><a [routerLink]="[routeName]">{{routeName.toUpperCase()}}</a></li>
 </ul>
 
 <nav class="hide-on-med-and-down">
   <div class="container nav-wrapper">
     <a href="#" class="brand-logo">AwesomeMovies</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li *ngFor="let routeName of routeNames"><a [routerLink]="[routeName]">{{routeName}}</a></li>
+      <li *ngFor="let routeName of routeNames"><a [routerLink]="[routeName]">{{routeName.toUpperCase()}}</a></li>
     </ul>
   </div>
 </nav>

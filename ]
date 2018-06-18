@@ -1,0 +1,28 @@
+import { Injectable } from "@angular/core"
+import { Observable } from "rxjs"
+import { LocalStorage } from '@ngx-pwa/local-storage';
+
+import { Movie } from '../movie/movie.model'
+
+@Injectable()
+export class FavoritesService {
+
+  favoriteMovies: Movie[]
+
+  constructor(private localStorage: LocalStorage) {}
+
+  addToFavorites(movie: Movie) {
+    this.getFavorites()
+    console.log(this.favoriteMovies)
+    console.log(movie)
+    this.favoriteMovies.push(movie)
+    this.localStorage.setItem('favorite-movies', this.favoriteMovies).subscribe(() => {});
+  }
+
+  getFavorites() {
+    this.localStorage.getItem<Movie[]>('favorite-movies').subscribe((movies) => {
+      this.favoriteMovies = movies
+    });
+  }
+
+}

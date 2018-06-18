@@ -10,12 +10,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { environment } from '../environments/environment';
 
 import { MoviesService } from './movies/movies.service';
+import { FavoritesService } from './favorites/favorites.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieComponent } from './movie/movie.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
+import { FavoritesComponent } from './favorites/favorites.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
     HeaderComponent,
     MoviesComponent,
     MovieComponent,
-    MovieDetailComponent
+    MovieDetailComponent,
+    FavoritesComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
-    MoviesService
+    MoviesService,
+    FavoritesService
   ],
   bootstrap: [AppComponent]
 })

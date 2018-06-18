@@ -11,16 +11,17 @@ import { debounceTime } from 'rxjs/operators';
 })
 export class HeaderComponent implements OnInit {
 
+  constructor(private router: Router) { }
+
   query: string
   subject: Subject<string> = new Subject();
 
-  routeNames = ["Home", "Favorites", "About"]
+  routeNames = ["home", "favorites", "about"]
 
   sideNavParams = {
     closeOnClick: true
   }
 
-  constructor(private router: Router) { }
 
   searchBarAction(query: string) {
     this.subject.next(query);
@@ -30,12 +31,11 @@ export class HeaderComponent implements OnInit {
     this.subject.pipe(debounceTime(500))
       .subscribe(query => {
         if(query != ''){
-          this.router.navigate(['/Home'], { queryParams: { search: query } })
+          this.router.navigate(['/home'], { queryParams: { search: query } })
         } else {
-          this.router.navigate(['/Home'], { queryParams: {} })
+          this.router.navigate(['/home'], { queryParams: {} })
         }
       });
   }
-
 
 }

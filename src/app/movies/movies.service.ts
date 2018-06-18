@@ -22,14 +22,14 @@ export class MoviesService {
     }
   }
 
-  search(page: string, query: string) {
+  search(page: string, query: string): Observable<Movie[]> {
     console.log(query)
     return this.http.get(`${MOVIE_API}/search/movie?api_key=${API_KEY}&query=${query}&page=${page}`).pipe(
       map(response => response.json().results)
     )
   }
 
-  discover(page: string) {
+  discover(page: string): Observable<Movie[]> {
     return this.http.get(`${MOVIE_API}/discover/movie?api_key=${API_KEY}&sort_by=popularity.desc&page=${page}`).pipe(
       map(response => response.json().results)
     )
