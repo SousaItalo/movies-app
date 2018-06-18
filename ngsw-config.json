@@ -20,5 +20,19 @@
         "/assets/**"
       ]
     }
+  }],
+  "dataGroups": [{
+    "name": "",
+    "urls": [
+      "/movie",
+      "/discover",
+      "/search"
+    ],
+    "cacheConfig": {
+      "maxSize": 500,
+      "maxAge": "1h",
+      "timeout": "10s",
+      "strategy": "freshness"
+    }
   }]
 }
