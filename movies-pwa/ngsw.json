@@ -1,0 +1,91 @@
+{
+  "configVersion": 1,
+  "index": "https://sousaitalo.github.io/movies-app/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://sousaitalo.github.io/movies-app/favicon.ico",
+        "https://sousaitalo.github.io/movies-app/index.html",
+        "https://sousaitalo.github.io/movies-app/main.2ba88c6b977605298f63.js",
+        "https://sousaitalo.github.io/movies-app/polyfills.e3633a42d1123afc5fc9.js",
+        "https://sousaitalo.github.io/movies-app/runtime.a66f828dca56eeb90e02.js",
+        "https://sousaitalo.github.io/movies-app/scripts.5d4daa63f5be535e9325.js",
+        "https://sousaitalo.github.io/movies-app/styles.98d3693ad95115567fe1.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://sousaitalo.github.io/movies-app/assets/fonts/material-icons.scss",
+        "https://sousaitalo.github.io/movies-app/assets/fonts/material-icons.woff2",
+        "https://sousaitalo.github.io/movies-app/assets/icons/icon-128x128.png",
+        "https://sousaitalo.github.io/movies-app/assets/icons/icon-144x144.png",
+        "https://sousaitalo.github.io/movies-app/assets/icons/icon-152x152.png",
+        "https://sousaitalo.github.io/movies-app/assets/icons/icon-192x192.png",
+        "https://sousaitalo.github.io/movies-app/assets/icons/icon-384x384.png",
+        "https://sousaitalo.github.io/movies-app/assets/icons/icon-512x512.png",
+        "https://sousaitalo.github.io/movies-app/assets/icons/icon-72x72.png",
+        "https://sousaitalo.github.io/movies-app/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "",
+      "patterns": [
+        "\\/movie",
+        "\\/discover",
+        "\\/search"
+      ],
+      "strategy": "freshness",
+      "maxSize": 500,
+      "maxAge": 3600000,
+      "timeoutMs": 10000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "https://sousaitalo.github.io/movies-app/assets/fonts/material-icons.scss": "55b5892b05285b32eb66fe3caf05bcd63fc0f253",
+    "https://sousaitalo.github.io/movies-app/assets/fonts/material-icons.woff2": "37145236f5b4c2e38d5b23cd1fdd26566d1ff9b5",
+    "https://sousaitalo.github.io/movies-app/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://sousaitalo.github.io/movies-app/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://sousaitalo.github.io/movies-app/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://sousaitalo.github.io/movies-app/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://sousaitalo.github.io/movies-app/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://sousaitalo.github.io/movies-app/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://sousaitalo.github.io/movies-app/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://sousaitalo.github.io/movies-app/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://sousaitalo.github.io/movies-app/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://sousaitalo.github.io/movies-app/index.html": "d7eb30ccc6006e4f3f69d8539bfb7577536c2a98",
+    "https://sousaitalo.github.io/movies-app/main.2ba88c6b977605298f63.js": "80b149561f3b47858a6700aa870705d493ef9d01",
+    "https://sousaitalo.github.io/movies-app/polyfills.e3633a42d1123afc5fc9.js": "5261a4729f780dd900641be94bd321182959641a",
+    "https://sousaitalo.github.io/movies-app/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "https://sousaitalo.github.io/movies-app/scripts.5d4daa63f5be535e9325.js": "b5fd7216e4b7456e1347955652c752d9b07075b4",
+    "https://sousaitalo.github.io/movies-app/styles.98d3693ad95115567fe1.css": "aea3bea0e6f7eba10847c085b17cbfb0f42bc814"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*\\.[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*\\/.*$"
+    }
+  ]
+}
