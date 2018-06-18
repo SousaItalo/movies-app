@@ -18,10 +18,8 @@ export class FavoritesService {
   getFavorites(): Movie[] {
     let localStorageMovies = JSON.parse(localStorage.getItem('favoriteMovies'))
     if( localStorageMovies == null){
-      console.log("NULL")
       return []
     } else {
-      console.log("FULL")
       return localStorageMovies.favoriteMovies
     }
   }
