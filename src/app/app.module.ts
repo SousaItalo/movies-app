@@ -6,6 +6,11 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { MaterializeModule } from "angular2-materialize";
 import { FormsModule } from '@angular/forms';
 
+// TOAST
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+
 import { AppRoutingModule } from './app-routing.module';
 import { environment } from '../environments/environment';
 
@@ -34,6 +39,9 @@ import { FavoritesComponent } from './favorites/favorites.component';
     AppRoutingModule,
     MaterializeModule,
     FormsModule,
+    CommonModule, // TOAST
+    BrowserAnimationsModule, // TOAST
+    ToastrModule.forRoot({ positionClass: 'toast-top-center' }), // TOAST
     InfiniteScrollModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],

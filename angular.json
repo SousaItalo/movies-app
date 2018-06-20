@@ -30,7 +30,8 @@
             "styles": [
               "src/variables.scss",
               "src/styles.scss",
-              "node_modules/materialize-css/dist/css/materialize.css"
+              "node_modules/materialize-css/dist/css/materialize.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
